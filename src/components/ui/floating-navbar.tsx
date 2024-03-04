@@ -67,15 +67,31 @@ export const Menu = ({
   setActive: (item: string | null) => void;
   children: React.ReactNode;
 }) => {
+  const isMobile = window.innerWidth < 768;
+  const [active] = React.useState<string | null>(null); // Definir la variable active
   return (
     <nav
-      onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full boder border-transparent dark:bg-white/[0.05] dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 "
+      onMouseLeave={() => setActive(null)}
+      className={`relative rounded-full border border-transparent dark:bg-white/[0.05] dark:border-white/[0.2] bg-white shadow-input flex ${
+        isMobile ? 'flex-col space-y-2' : 'justify-center space-x-4'
+      } px-8 py-6`}
     >
-      {children}
+      {isMobile ? (
+        // Si es un dispositivo móvil, muestra el menú hamburguesa
+        <div>
+          <div onClick={() => setActive('menu')} className="cursor-pointer">
+            ☰ Menu
+          </div>
+          {active === 'menu' && <div>{children}</div>}
+        </div>
+      ) : (
+        // Si no es un dispositivo móvil, muestra los elementos del menú en línea
+        children
+      )}
     </nav>
   );
 };
+
 
 export const ProductItem = ({
   title,

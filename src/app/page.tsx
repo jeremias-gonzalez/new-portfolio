@@ -1,14 +1,17 @@
 import { TracingBeamDemo} from "./TracingBeam";
 import { HeroParallaxDemo } from "./HeroParallaxDemo";
-import { NavbarDemo } from "./FloatingNavbar";
+import  NewNavbar from './Navbar';
 import { AnimatedTooltipPreview } from "./AnimatedTooltipPreview";
+import { StickyScrollRevealDemo } from "./StickyScrollRevealDemo";
 export default function Home() {
   return (
     <main>
-      <NavbarDemo/>
+      <NewNavbar/>
     <HeroParallaxDemo/> 
     <AnimatedTooltipPreview/>
     <TracingBeamDemo/>
+    {/* <StickyScrollRevealDemo/> */}
+   
     </main>
   );
 }
