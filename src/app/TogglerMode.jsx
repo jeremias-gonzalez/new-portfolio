@@ -6,24 +6,28 @@ import {BsSunFill} from "react-icons/bs"
 
 const TogglerMode = () => {
   const [theme, setTheme] = useState(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
+    // Verifica si estamos en un entorno de navegador antes de acceder a window
+    if (typeof window !== 'undefined' && window.matchMedia) {
+      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     }
+    // Por defecto, devuelve "light" si no se puede determinar el tema
     return "light";
   });
 
+  // useEffect para manejar cambios en el tema oscuro
   useEffect(() => {
-    if (theme === "dark") {
-      document.querySelector("html").classList.add("dark");
-    } else {
-      document.querySelector("html").classList.remove("dark");
+    if (typeof window !== 'undefined') {
+      if (theme === "dark") {
+        document.querySelector("html").classList.add("dark");
+      } else {
+        document.querySelector("html").classList.remove("dark");
+      }
     }
   }, [theme]);
 
   const handleChangeTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
-
   return (
     <div className="relative  w-16 h-8 flex items-center dark:bg-gray-900 bg-teal-50 cursor-pointer rounded-full p-1" onClick={handleChangeTheme}>
       <FaMoon className="text-white" size={18} />

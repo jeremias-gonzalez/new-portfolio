@@ -49,20 +49,20 @@ const  NewNavbar = () => {
          z-index-10000 bg-white rounded-lg
           text-white w-56 min-h-screen 
           transition-transform transform -translate-x-full 
-          ease-in-out duration-500"
+          ease-in-out duration-500 "
             id="sidebar" style={{ zIndex: 1000 }}>
            
-            <div class="p-5  ">
+            <div className="p-5  ">
             <div className='flex '>
                         <h1 class="text-xl dark:text-white text-dark font-semibold">JereDev</h1>
                         <img src="./images/react.svg" className='w-7 h-6 mx-2 m-auto' alt="" />
                         </div>
                         
-                <ul class="m-16 mt-52">
-                    <li class="mb-2"><a href="#" class="block  size-10 font-bold text-xl dark:text-white dark:hover:text-indigo-400 text-dark hover:text-indigo-400">Home</a></li>
-                    <li class="mb-2"><a href="#" class="block size-10 font-bold text-xl dark:text-white dark:hover:text-indigo-400 text-dark hover:text-indigo-400">About</a></li>
-                    <li class="mb-2"><a href="#" class="block size-10 font-bold text-xl dark:text-white dark:hover:text-indigo-400 text-dark hover:text-indigo-400">Services</a></li>
-                    <li class="mb-2"><a href="#" class="block size-10 font-bold text-xl dark:text-white dark:hover:text-indigo-400 text-dark hover:text-indigo-400">Contact</a></li>
+                <ul className="m-16 mt-52">
+                    <li className="mb-2"><a href="#" class="block  size-10 font-bold text-xl dark:text-white dark:hover:text-indigo-400 text-dark hover:text-indigo-400">Home</a></li>
+                    <li className="mb-2"><a href="#" class="block size-10 font-bold text-xl dark:text-white dark:hover:text-indigo-400 text-dark hover:text-indigo-400">About</a></li>
+                    <li className="mb-2"><a href="#" class="block size-10 font-bold text-xl dark:text-white dark:hover:text-indigo-400 text-dark hover:text-indigo-400">Services</a></li>
+                    <li className="mb-2"><a href="#" class="block size-10 font-bold text-xl dark:text-white dark:hover:text-indigo-400 text-dark hover:text-indigo-400">Contact</a></li>
                 </ul>
             </div>
         </div>
