@@ -14,7 +14,7 @@ export function TracingBeamDemo() {
      
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
-            <h2 className="bg-black dark:text-blanco text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
+            <h2 className="bg-black dark:bg-white dark:text-dark dark:font-bold text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
               {item.badge}
             </h2>
 
@@ -22,7 +22,7 @@ export function TracingBeamDemo() {
               {item.title}
             </p> */}
 
-            <div className="text-sm  prose prose-sm dark:prose-invert">
+            <div className="text-sm dark:text-white dark:font-bold prose prose-sm dark:prose-invert">
               {item?.image && (
                 <Image
                   src={item.image}

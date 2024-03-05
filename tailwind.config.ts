@@ -10,6 +10,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
   darkMode: 'class',
   theme: {
@@ -28,7 +29,7 @@ const config: Config = {
     },
   },
   plugins: [
-    
+    require('flowbite/plugin'),
     addVariablesForColors,
   ],
 };
