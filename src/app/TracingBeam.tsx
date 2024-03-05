@@ -8,13 +8,13 @@ import { TracingBeam } from "../components/ui/tracing-beam";
 export function TracingBeamDemo() {
   return (
    
-    <TracingBeam className="px-6">
+    <TracingBeam className="px-6 dark:bg-dark">
     
-      <div className="max-w-2xl mx-auto antialiased pt-4 relative">
+      <div className=" max-w-2xl mx-auto antialiased pt-4 relative">
      
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
-            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
+            <h2 className="bg-black dark:text-blanco text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
               {item.badge}
             </h2>
 

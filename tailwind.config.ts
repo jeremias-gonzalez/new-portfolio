@@ -14,6 +14,12 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      colors:{
+      'dark':'#232A3C',
+      'medium':'#293245',
+      'blanco':'#white',
+       
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
