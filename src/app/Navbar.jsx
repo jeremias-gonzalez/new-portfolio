@@ -40,13 +40,14 @@ const  NewNavbar = () => {
     };
 }, []);
   return (
-    <>
+    <div>
         
      
         <div className="dark:absolute
        absolute dark:text-white
+       bg-white
        dark:bg-gray-800
-         z-index-10000 bg-white rounded-lg
+         z-index-10000  rounded-lg
           text-white w-56 min-h-screen 
           transition-transform transform -translate-x-full 
           ease-in-out duration-500 "
@@ -70,10 +71,10 @@ const  NewNavbar = () => {
 
    
        
-            <div class="flex-1 flex flex-col overflow-hidden m-2 rounded-lg ">
-                <div class="container mx-auto">
+            <div class="flex-1 flex bg-white dark:bg-dark flex-col overflow-hidden m-2 rounded-lg ">
+                <div class="container ">
                     <div class="flex justify-between items-center py-4 px-2">
-                      <div className='flex'>
+                      <div className='flex '>
                         <h1 class="text-xl  text-black font-semibold dark:text-white  dark:font-semibold">JereDev</h1>
                         <img src="/images/React-icon.svg.png" className='w-7 h-6 mx-2 m-auto' alt="" />
                         </div>
@@ -90,7 +91,7 @@ const  NewNavbar = () => {
             </div>
             
             
-        </>
+        </div>
 
    
   )

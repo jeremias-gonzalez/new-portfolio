@@ -8,13 +8,17 @@ import { TracingBeam } from "../components/ui/tracing-beam";
 export function TracingBeamDemo() {
   return (
    
-    <TracingBeam className="px-6 dark:bg-dark">
+    <TracingBeam className="
+    px-6 dark:bg-dark bg-white
     
-      <div className=" max-w-2xl mx-auto antialiased pt-4 relative">
+ ">
+    
+      <div className="
+       max-w-2xl mx-auto px-10 antialiased pt-4 relative animate-fade-left animate-duration-[1500ms] animate-delay-[400ms] animate-ease-in-out animate-alternate">
      
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
-            <h2 className="bg-black dark:bg-white dark:text-dark dark:font-bold text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
+            <h2 className="text-black dark:bg-white dark:text-dark dark:font-bold  rounded-full text-sm w-fit px-4 py-1 mb-4">
               {item.badge}
             </h2>
 
@@ -22,7 +26,7 @@ export function TracingBeamDemo() {
               {item.title}
             </p> */}
 
-            <div className="text-sm dark:text-white dark:font-bold prose prose-sm dark:prose-invert">
+            <div className="text-sm text-black font-bold dark:text-white dark:font-bold prose prose-sm dark:prose-invert">
               {item?.image && (
                 <Image
                   src={item.image}
