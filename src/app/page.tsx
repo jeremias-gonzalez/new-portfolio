@@ -2,7 +2,7 @@
 import { TracingBeamDemo} from "./TracingBeam";
 import { HeroParallaxDemo } from "./HeroParallaxDemo";
 import  NewNavbar from './Navbar';
-import TogglerMode from "./TogglerMode";
+
 import { AnimatedTooltipPreview } from "./AnimatedTooltipPreview";
 
 export default function Home() {
