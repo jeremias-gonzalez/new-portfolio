@@ -1,9 +1,45 @@
 import React from 'react'
-
+import { useEffect } from 'react'
 const Contact = () => {
+    useEffect(() => {
+    
+        const dfas = document.getElementById('contact');
+        const openContactButton = document.getElementById('open-contact');
+    
+        const handleContactToggle = (e) => {
+            e.stopPropagation();
+            contact.classList.toggle('-translate-x-full');
+            console.log('Contact Toggled');
+        };
+    
+        const handleDocumentClick = (e) => {
+            if (contact && openContactButton) {
+                // Verifica si el clic está fuera del sidebar y del botón
+                if (!contact.contains(e.target) && !openContactButton.contains(e.target)) {
+                    contact.classList.add('-translate-x-full');
+                    console.log('Sidebar Closed');
+                }
+            }
+        };
+    
+        if (openContactButton) {
+            openContactButton.addEventListener('click', handleContactToggle);
+        }
+    
+        // Close the sidebar when clicking outside of it
+        document.addEventListener('click', handleDocumentClick);
+    
+        return () => {
+            // Limpieza al desmontar el componente
+            if (openContactButton) {
+                openContactButton.removeEventListener('click', handleContactToggle);
+            }
+            document.removeEventListener('click', handleDocumentClick);
+        };
+    }, []);
   return (
-    <div>
-        <section class="bg-white dark:bg-gray-900 ">
+    <div id="contact" >
+        <section class="bg-white w-50 dark:bg-gray-900 " id="contact">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
       <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
