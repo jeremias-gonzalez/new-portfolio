@@ -18,7 +18,7 @@ export function TracingBeamDemo() {
      
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
-            <h2 className="text-black dark:bg-white dark:text-dark dark:font-bold  rounded-full text-sm w-fit px-4 py-1 mb-4">
+            <h2 className="text-white bg-dark dark:bg-white dark:text-dark dark:font-bold  rounded-full text-sm w-fit px-4 py-1 mb-4">
               {item.badge}
             </h2>
 
@@ -26,16 +26,9 @@ export function TracingBeamDemo() {
               {item.title}
             </p> */}
 
-            <div className="text-sm text-black font-bold dark:text-white dark:font-bold prose prose-sm dark:prose-invert">
-              {item?.image && (
-                <Image
-                  src={item.image}
-                  alt="blog thumbnail"
-                  height="1000"
-                  width="1000"
-                  className="rounded-lg mb-10 object-cover"
-                />
-              )}
+            <div className="text-sm text-dark font-black dark:text-white dark:font-bold prose prose-sm dark:prose-invert">
+           
+              
               {item.description}
             </div>
           </div>
@@ -50,78 +43,55 @@ export function TracingBeamDemo() {
 
 const dummyContent = [
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+   
     description: (
       <>
-        <p>
-          Sit duis est minim proident non nisi velit non consectetur. Esse
-          adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-          Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-          incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-          fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
-          nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
-          occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
-          officia sint labore. Tempor consectetur excepteur ut fugiat veniam
-          commodo et labore dolore commodo pariatur.
+      <img src="./images/fotoface.png" className="rounded-3xl" alt="" />
+        <p className="m-5">
+        ¡Hola! Soy Jeremias!, un apasionado por el Desarrollo Front-end 
+         con una fascinación por dar vida a mis aplicaciones web. Desde temprana edad, he estado inmerso en este mundo y siempre me pregunte, <br /> ¿Como puedo dar una solucion a esta aplicacion en particular?,¿Porque tiene tantos errores?
+         {/* . Mi objetivo es hacer crecer tu marca personal/empresa. */}
         </p>
-        <p>
-          Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
-          veniam in commodo id reprehenderit adipisicing. Proident duis
-          exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
-        </p>
-        <p>
-          Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-          reprehenderit deserunt amet laborum consequat adipisicing officia qui
-          irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
-          Amet culpa officia aliquip deserunt veniam deserunt officia
-          adipisicing aliquip proident officia sunt.
-        </p>
+       
+       
       </>
     ),
-    badge: "React",
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    badge: "< Sobre mi />"
+    
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    
     description: (
       <>
-        <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+      <img className="bg-white rounded-xl w-100 h-150" src="./images/velocisite.png" alt="" />
+        <p  className="m-5">
+        Con 2 años de experiencia en Desarrollo y Diseño Front-End, he tenido la oportunidad de fundar <a href="https://velocisite.vercel.app/" target="blank"><span className="text-green-400">Velocisite</span></a>.
+        Una startup en la que adquirí nuevas habilidades como lider , en gestion de tiempo , solucionando problemas,etc.
+         
         </p>
-        <p>
-          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-          cillum ut mollit.
-        </p>
+     
       </>
     ),
-    badge: "Changelog",
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    badge: "< Experiencia />",
+   
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    
     description: (
+      
       <>
-        <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+       <img src="./images/cursos.png" className="rounded-2xl" alt="" />
+        <p className="m-5">
+        
+         Formé mi carrera profesional en CODERHOUSE y de manera autodidacta en Youtube.
+         En la actualidad sigo reforzando conocimientos en la UNRC(Universidad Nacional De Rio Cuarto) como licenciado en Cs de la computación. 
         </p>
       </>
     ),
-    badge: "Launch Week",
-    image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+ 
+    badge: "< Educación /> ",
+ 
+   
+     
   },
 ];

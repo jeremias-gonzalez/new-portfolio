@@ -1,65 +1,41 @@
 import React from 'react'
 import { useEffect } from 'react'
+import TogglerMode from './TogglerMode'
 const Contact = () => {
-    useEffect(() => {
     
-        const dfas = document.getElementById('contact');
-        const openContactButton = document.getElementById('open-contact');
-    
-        const handleContactToggle = (e) => {
-            e.stopPropagation();
-            contact.classList.toggle('-translate-x-full');
-            console.log('Contact Toggled');
-        };
-    
-        const handleDocumentClick = (e) => {
-            if (contact && openContactButton) {
-                // Verifica si el clic está fuera del sidebar y del botón
-                if (!contact.contains(e.target) && !openContactButton.contains(e.target)) {
-                    contact.classList.add('-translate-x-full');
-                    console.log('Sidebar Closed');
-                }
-            }
-        };
-    
-        if (openContactButton) {
-            openContactButton.addEventListener('click', handleContactToggle);
-        }
-    
-        // Close the sidebar when clicking outside of it
-        document.addEventListener('click', handleDocumentClick);
-    
-        return () => {
-            // Limpieza al desmontar el componente
-            if (openContactButton) {
-                openContactButton.removeEventListener('click', handleContactToggle);
-            }
-            document.removeEventListener('click', handleDocumentClick);
-        };
-    }, []);
   return (
-    <div id="contact" >
-        <section class="bg-white w-50 dark:bg-gray-900 " id="contact">
-  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
-      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
-      <form action="#" class="space-y-8">
-          <div>
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@example.com" required/>
-          </div>
-          <div>
-              <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-              <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required/>
-          </div>
-          <div class="sm:col-span-2">
-              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
-          </div>
-          <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
-      </form>
-  </div>
-</section>
+    <div  >
+<footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-0.5 ">
+    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div className="sm:flex sm:items-center sm:justify-between">
+            <div className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <img src="/images/React-icon.svg.png" className="h-8" alt="Flowbite Logo" />
+                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">JereDev</span>
+            </div>
+            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#" className="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" className="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">Jeremias Gonzalez Front-end Dev™</a>. All Rights Reserved.</span>
+    </div>
+    <div className='fixed bottom-4 right-4  text-white font-bold py-2 px-4'>
+    <TogglerMode/>
+    </div>
+</footer>
+
+
     </div>
   )
 }

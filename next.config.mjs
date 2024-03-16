@@ -3,7 +3,7 @@ const nextConfig = {
 
     images: {
      formats: ['image/avif', 'image/webp'],
-    domains: ['images.unsplash.com'], // Agrega el dominio directamente en "domains"
+    domains: ['images.unsplash.com',"public/images/"], // Agrega el dominio directamente en "domains"
 
       remotePatterns: [
         {

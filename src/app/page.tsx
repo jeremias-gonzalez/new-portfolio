@@ -11,7 +11,8 @@ export default function Home() {
 
     <main className="dark:bg-dark bg-white">
       <NewNavbar/>  
- <HeroParallaxDemo/>  
+ <HeroParallaxDemo/>
+   
       <AnimatedTooltipPreview/>   
  <TracingBeamDemo/>  
  <Contact/>

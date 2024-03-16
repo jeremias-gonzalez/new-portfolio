@@ -29,7 +29,8 @@ const TogglerMode = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
   return (
-    <div className="relative  w-16 h-8 flex items-center dark:bg-gray-900 bg-teal-50 cursor-pointer transform transition-transform duration-500 rounded-full p-1" onClick={handleChangeTheme}>
+  
+    <div className="relative  w-16 h-8 flex items-center dark:bg-gray-900 bg-teal-50 cursor-pointer transform transition-transform duration-1000 rounded-full p-1" onClick={handleChangeTheme}>
       <FaMoon className="text-white" size={18} />
       <div
         className="absolute bg-white dark:bg-medium w-6 h-6 rounded-full shadow-md "
