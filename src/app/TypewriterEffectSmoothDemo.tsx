@@ -29,10 +29,10 @@ export function TypewriterEffectSmoothDemo() {
     <div>
     
     <div className="flex flex-col items-center justify-center h-[10rem]  ">
-  
+     
       <p className="text-dark font-extrabold dark:text-neutral-200 text-xs sm:text-base  ">
       Welcome to my Portfolio
-
+     
       </p>
       <img className="my-10  shadow-slate-800 w-48 rounded-full" src="./images/fotoface2.png" alt="" />
      
