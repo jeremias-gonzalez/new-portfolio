@@ -40,8 +40,8 @@ const people = [
 
 export function AnimatedTooltipPreview() {
   return (
-    <div className="flex dark:bg-dark bg-white flex-col items-center justify-center mt-2 mb-48 ">
-        <h1 className="font-bold text-8xl px-10 animate-fade-up animate-once animate-duration-[2000ms] animate-delay-500 animate-ease-in-out animate-normal ">
+    <div className="flex dark:bg-dark bg-white flex-col items-center justify-center mt-1 mb-48 ">
+        <h1 className=" text-dark font-bold text-8xl px-10 animate-fade-up animate-once animate-duration-[2000ms] animate-delay-500 animate-ease-in-out animate-normal ">
           <TextGenerateEffectDemo/>
         </h1>
         

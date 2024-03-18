@@ -5,23 +5,25 @@ export function TypewriterEffectSmoothDemo() {
   const words = [
     {
         text: "HI!,",
-        className: "text-blue-500 dark:text-blue-500",
+        className: "dark:text-transparent dark:bg-gradient-to-r dark:from-indigo-500 dark:via-purple-300 dark:to-pink-500 dark:bg-clip-text  text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text ",
       },
     {
       text: "Im",
     },
     {
       text: "Jeremias",
+      className:"dark:text-transparent dark:bg-gradient-to-r dark:from-indigo-500 dark:via-purple-300 dark:to-pink-500 dark:bg-clip-text  text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text ",
     },
     {
       text: "Gonzalez",
+      className:"dark:text-transparent dark:bg-gradient-to-r dark:from-indigo-500 dark:via-purple-300 dark:to-pink-500 dark:bg-clip-text  text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text ",
     },
     {
       text: "Developer Front-end",
     },
     {
       text: "React.",
-      className: "text-blue-500 dark:text-blue-500",
+      className:" dark:text-transparent dark:bg-gradient-to-r dark:from-indigo-500 dark:via-purple-300 dark:to-pink-500 dark:bg-clip-text  text-transparent bg-gradient-to-r  from-indigo-500 via-purple-500 to-pink-500 bg-clip-text ",
     },
   ];
 
@@ -36,7 +38,7 @@ export function TypewriterEffectSmoothDemo() {
       </p>
       <img className="my-10  shadow-slate-800 w-48 rounded-full" src="./images/fotoface2.png" alt="" />
      
-      <TypewriterEffectSmooth words={words} />
+      <TypewriterEffectSmooth  words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
       
       </div>
