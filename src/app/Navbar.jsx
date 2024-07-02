@@ -61,6 +61,7 @@ const  NewNavbar = () => {
                         
                 <ul className="m-16 mt-52">
                     <li className="mb-2"><a href="#" class="block  size-10 font-bold text-xl dark:text-white dark:hover:text-indigo-400 text-dark hover:text-indigo-400">Home</a></li>
+                    <li className="mb-2"><a href="#" class="block size-10 font-bold text-xl dark:text-white dark:hover:text-indigo-400 text-dark hover:text-indigo-400">Skills</a></li>
                     <li className="mb-2"><a href="#" class="block size-10 font-bold text-xl dark:text-white dark:hover:text-indigo-400 text-dark hover:text-indigo-400">About</a></li>
                     <li className="mb-2"><a href="#" class="block size-10 font-bold text-xl dark:text-white dark:hover:text-indigo-400 text-dark hover:text-indigo-400">Services</a></li>
                     <li className="mb-2"><a href="#" class="block size-10 font-bold text-xl dark:text-white dark:hover:text-indigo-400 text-dark hover:text-indigo-400">Contact</a></li>

@@ -6,24 +6,47 @@ export function HeroParallaxDemo() {
   return <HeroParallax products={products}/>;
 }
 export const products = [
-  {
-    title: "Velocisite",
-    link: "https://merceria-dina.vercel.app/",
-    thumbnail:
-      "./images/velocisite2.png",
-  },
+
   {
     title: "Caes",
     link: "https://jeremias-gonzalez.github.io/Proyecto-CAES/",
     thumbnail:
       "./images/caes.png",
   },
+  // {
+  //   title: "Merceria Dina",
+  //   link: "https://merceria-dina.vercel.app/",
+  //   thumbnail:
+  //     "./images/merceria dina.png",
+  // },
+
+  
   {
-    title: "Merceria Dina",
-    link: "https://merceria-dina.vercel.app/",
+    title: "Velocisite",
+    link: "https://www.velocisite.com.ar/",
     thumbnail:
-      "./images/merceria dina.png",
+      "./images/velocisite-react.png",
   },
+  {
+    title: "GrupoHydrotecnova",
+    link: "https://grupohydrotecnova.netlify.app/",
+    thumbnail:
+      "./images/hydrotec.png",
+  },
+  
+  
+  {
+    title: "Caes",
+    link: "https://jeremias-gonzalez.github.io/Proyecto-CAES/",
+    thumbnail:
+      "./images/caes.png",
+  },
+  // {
+  //   title: "Merceria Dina",
+  //   link: "https://merceria-dina.vercel.app/",
+  //   thumbnail:
+  //     "./images/merceria dina.png",
+  // },
 
   {
     title: "GrupoHydrotecnova",
@@ -31,41 +54,5 @@ export const products = [
     thumbnail:
       "./images/hydrotec.png",
   },
-  {
-    title: "Old Portfolio",
-    link: "https://jeremias-gonzalez.github.io/portfolio/",
-    thumbnail:
-      "./images/old.png",
-  },
-  {
-    title: "Velocisite",
-    link: "https://merceria-dina.vercel.app/",
-    thumbnail:
-      "./images/velocisite2.png",
-  },
-  {
-    title: "Caes",
-    link: "https://jeremias-gonzalez.github.io/Proyecto-CAES/",
-    thumbnail:
-      "./images/caes.png",
-  },
-  {
-    title: "Merceria Dina",
-    link: "https://merceria-dina.vercel.app/",
-    thumbnail:
-      "./images/merceria dina.png",
-  },
-
-  {
-    title: "GrupoHydrotecnova",
-    link: "https://grupohydrotecnova.netlify.app/",
-    thumbnail:
-      "./images/hydrotec.png",
-  },
-  {
-    title: "Old Portfolio",
-    link: "https://jeremias-gonzalez.github.io/portfolio/",
-    thumbnail:
-      "./images/old.png",
-  },
+  
 ];

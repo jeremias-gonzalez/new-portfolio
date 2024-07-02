@@ -3,6 +3,9 @@ import React from "react";
 
 import Image from "next/image";
 
+
+import { motion } from "framer-motion";
+import { LinkPreview } from "../components/ui/link-preview";
 import { TracingBeam } from "../components/ui/tracing-beam";
 
 export function TracingBeamDemo() {
@@ -65,7 +68,13 @@ const dummyContent = [
       <>
       <img className="bg-white rounded-xl w-100 h-150" src="./images/velocisite.png" alt="" />
         <p  className="m-5">
-        Con 2 años de experiencia en Desarrollo y Diseño Front-End, he tenido la oportunidad de fundar <a href="https://velocisite.vercel.app/" target="blank"><span className="text-green-400">Velocisite</span></a>.
+        Con 2 años de experiencia en Desarrollo y Diseño Front-End, he tenido la oportunidad de fundar
+          <LinkPreview
+          url="https://velocisite.com.ar/"
+          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
+        >
+          <span className="text-green-400 mx-1">Velociste</span>
+        </LinkPreview>{""}.
         Una startup en la que adquirí nuevas habilidades como lider , en gestion de tiempo , solucionando problemas,etc.
          
         </p>
